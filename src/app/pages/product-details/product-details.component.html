@@ -1,1 +1,7 @@
-<p>product-details works!</p>
+<h3>{{ product?.title }}</h3>
+<p> Price : {{ product?.price }} </p>
+<p> Category : {{ product?.category }} </p>
+<p> Description : {{product?.description}} </p>
+<img [src]="product?.image" [alt]="product?.title" width="150" />
+
+

@@ -3,4 +3,4 @@
 <p> Category : {{ product.category }} </p>
 <p> Description : {{product.description}} </p>
 <img [src]="product.image" [alt]="product.title" width="150" />
-
+<a [routerLink]="['/products' , product.id]"> Product Details </a>

@@ -1,0 +1,32 @@
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #1f2937;
+    padding: 15px 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+.cart-link {
+    margin-left: auto;
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.cart-link:hover {
+    background-color: #1d4ed8;
+    color: white;
+}

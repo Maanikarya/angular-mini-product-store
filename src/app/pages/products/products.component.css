@@ -1,0 +1,19 @@
+.page-title {
+    text-align: center;
+    margin: 30px 0;
+    color: #1f2937;
+}
+
+.product-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 20px;
+
+}

@@ -1,7 +1,19 @@
 <nav>
-    <a routerLink="/" class="nav-link">Home</a>
-    <a routerLink="/products" class="nav-link">Products</a>
-    <a routerLink="/about" class="nav-link">About</a>
 
-    <a routerLink="/cart" class="nav-link"> 🛒 Cart {{ cartCount }}</a> 
+    <a routerLink="/" class="nav-link">
+        Home
+    </a>
+
+    <a routerLink="/products" class="nav-link">
+        Products
+    </a>
+
+    <a routerLink="/about" class="nav-link">
+        About
+    </a>
+
+    <a routerLink="/cart" class="nav-link cart-link">
+        🛒 Cart ({{ cartCount }})
+    </a>
+
 </nav>

@@ -1,7 +1,28 @@
-<h3>{{ product.title }}</h3>
-<p> Price : {{ product.price }} </p>
-<p> Category : {{ product.category }} </p>
-<p> Description : {{product.description}} </p>
-<img [src]="product.image" [alt]="product.title" width="150" />
-<a [routerLink]="['/products' , product.id]"> Product Details </a>
-<button (click)="addToCart()">Add To Cart</button>
+<div class="product-card">
+
+    <img
+        [src]="product.image"
+        [alt]="product.title">
+
+    <h3>{{ product.title }}</h3>
+
+    <p class="price">
+        {{ product.price | currency:'INR' }}
+    </p>
+
+    <p class="category">
+        {{ product.category }}
+    </p>
+
+    <a
+        [routerLink]="['/products', product.id]"
+        class="details-btn">
+        View Details
+    </a>
+
+    <button
+        (click)="addToCart()">
+        Add To Cart
+    </button>
+
+</div>

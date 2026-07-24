@@ -1,28 +1,43 @@
-<h2>🛒 My Cart</h2>
+<div class="container">
 
-<div *ngIf="cartItems.length === 0">
-    <h3>Your cart is empty.</h3>
-</div>
+    <h1 class="heading">
+        🛒 My Shopping Cart
+    </h1>
 
-<div *ngFor="let item of cartItems">
+    <div
+        *ngIf="cartItems.length === 0"
+        class="empty-cart">
 
-    <hr>
+        Your Cart is Empty 😔
 
-    <h3>{{ item.title }}</h3>
+    </div>
 
-    <img
-        [src]="item.image"
-        [alt]="item.title"
-        width="150">
+    <div
+        class="cart-card"
+        *ngFor="let item of cartItems">
 
-    <p>
-        <strong>Price:</strong>
-        {{ item.price | currency:'INR' }}
-    </p>
+        <img
+            [src]="item.image"
+            [alt]="item.title">
 
-    <p>
-        <strong>Category:</strong>
-        {{ item.category }}
-    </p>
+        <div class="product-info">
+
+            <h3>{{ item.title }}</h3>
+
+            <p class="price">
+                {{ item.price | currency:'INR' }}
+            </p>
+
+            <p class="category">
+                {{ item.category }}
+            </p>
+
+            <p>
+                {{ item.description }}
+            </p>
+
+        </div>
+
+    </div>
 
 </div>

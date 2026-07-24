@@ -1,0 +1,28 @@
+<h2>🛒 My Cart</h2>
+
+<div *ngIf="cartItems.length === 0">
+    <h3>Your cart is empty.</h3>
+</div>
+
+<div *ngFor="let item of cartItems">
+
+    <hr>
+
+    <h3>{{ item.title }}</h3>
+
+    <img
+        [src]="item.image"
+        [alt]="item.title"
+        width="150">
+
+    <p>
+        <strong>Price:</strong>
+        {{ item.price | currency:'INR' }}
+    </p>
+
+    <p>
+        <strong>Category:</strong>
+        {{ item.category }}
+    </p>
+
+</div>
